@@ -1,0 +1,114 @@
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p, li, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h3, p, li {
+    color: $primary-text;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 35px 150px;
+
+    .logo {
+        cursor: pointer;
+    }
+
+    .nav-wrapper {
+        margin-left: auto;
+        margin-right: 25px;
+
+        .nav-list {
+            display: flex;
+            gap: 30px;
+            margin-right: 4px;
+
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 23px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.button-primary {
+    background: $primary-bg;
+    border-radius: 25px;
+    width: 153px;
+    height: 43px;
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: $secondary-text;
+    cursor: pointer;
+
+    &.transparent {
+        border: 2px solid $primary-border;
+        color: $primary-text;
+        background: transparent;
+    }
+}
+
+.main-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .page-title {
+            padding-bottom: 5px;
+            color: $page-title-color;
+            font-size: 16px;
+        }
+    
+        .main-title {
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 77px;
+            margin-bottom: 23px;
+        }
+
+        .text-default {
+            margin-bottom: 36px;
+            width: 717px;
+        }
+    
+        .main-buttons {
+            display: flex;
+            margin-bottom: 55px;
+        }
+
+        .main-benefits-wrapper {
+            display: flex;
+            gap: 92px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .main-image {
+        height: 528px;
+    }
+}
+
+.text-default {
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+}
