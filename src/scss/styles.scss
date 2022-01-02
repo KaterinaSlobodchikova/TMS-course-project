@@ -215,20 +215,58 @@ h1, h3, p, li {
     .delivery-container {
         .order-summary {
             display: flex;
+            padding: 20px 15px;
+            gap: 10px;
+
+            .text-default {
+
+                &.big {
+                    font-size: 20px;
+                }
+
+                &.bold {
+                    font-weight: bold;
+                    padding-left: 75px;
+                }
+            }
         }
 
         .info {
             display: flex;
-        }
-        
-        .first-form {
-            
+            gap: 10px;
+            padding: 23px 0px;
 
+            .text-default {
+
+                &.bold {
+                    font-weight: bold;
+                }
+
+                &.gray {
+                    color: $gray-color;
+                }
+            }
+        }
+
+        .first-form {
+
+            .form-info {
+                display: flex;
+                flex-direction: column;
+
+                .text-default {
+
+                    &.gray {
+                        color: $gray-color;
+                        font-size: 20px;
+                    }
+                }
+            }
         }
 
         .order-line {
             width: 400px;
-            border: 1px solid $secondary-border;
+            border-bottom: 1px solid $secondary-border;
 
             &.small {
                 width: 368px;
@@ -237,10 +275,37 @@ h1, h3, p, li {
 
         .first-form {
             width: 403px;
-            height: 159px;
+            height: 180px;
             border: 2px solid $secondary-border;
             border-radius: 3%;
             background-color: $primary-border;
+
+            .form-one {
+                display: flex;
+
+                .form-info {
+                    padding: 20px 15px;
+                }
+
+                .change-info {
+                    cursor: pointer;
+
+                    &.first {
+                        padding: 18px 0px 0px 210px;
+                    }
+
+                    &.second {
+                        padding: 18px 0px 0px 25px;
+                    }
+                }
+            }
+
+            .order-line {
+
+                &.small {
+                    margin-left: 16px;
+                }
+            }
         }
 
 
@@ -257,8 +322,6 @@ h1, h3, p, li {
     .delivery-description {
         padding-left: 30px;
     }
-
-    
 }
 
 .map-wrapper {
