@@ -208,6 +208,55 @@ h1, h3, p, li {
 .delivery-wrapper {
     height: 70vh;
     background-color: $secondary-bg;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+
+    .delivery-container {
+        .order-summary {
+            display: flex;
+        }
+
+        .info {
+            display: flex;
+        }
+        
+        .first-form {
+            
+
+        }
+
+        .order-line {
+            width: 400px;
+            border: 1px solid $secondary-border;
+
+            &.small {
+                width: 368px;
+            }
+        }
+
+        .first-form {
+            width: 403px;
+            height: 159px;
+            border: 2px solid $secondary-border;
+            border-radius: 3%;
+            background-color: $primary-border;
+        }
+
+
+        .button-primary {
+
+            &.big {
+                width: 400px;
+                height: 71px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .delivery-description {
+        padding-left: 30px;
+    }
 
     
 }
