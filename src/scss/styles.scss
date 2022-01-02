@@ -63,7 +63,7 @@ h1, h3, p, li {
 }
 
 .main-wrapper {
-    height: 110vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     margin-top: 54px;
@@ -72,6 +72,7 @@ h1, h3, p, li {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
 
         .text-default {
             margin-bottom: 36px;
@@ -140,6 +141,12 @@ h1, h3, p, li {
     align-items: center;
     background-color: $secondary-bg;
 
+    .steps-desc {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .page-title {
         padding-top: 35px;
     }
@@ -155,6 +162,23 @@ h1, h3, p, li {
 
         .step-wrapper {
             width: 388px;
+
+            .steps-image {
+                padding-bottom: 40px;
+                padding-left: 20px;
+
+                &.second {
+                    padding-left: 90px;
+                }
+
+                &.third {
+                    padding-left: 60px;
+                }
+            }
+
+            .text-title {
+                padding-bottom: 12px;
+            }
         }
     }
 }
@@ -184,6 +208,8 @@ h1, h3, p, li {
 .delivery-wrapper {
     height: 70vh;
     background-color: $secondary-bg;
+
+    
 }
 
 .map-wrapper {
@@ -194,8 +220,13 @@ h1, h3, p, li {
     margin-top: 50px;
     position: relative;
 
+    .map-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .text-default {
-        width: 510px;
         padding-bottom: 12px;
 
     &.location {
@@ -208,10 +239,61 @@ h1, h3, p, li {
 }
 
 .questions-wrapper {
-    height: 80vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .page-title {
+        padding-top: 100px;
+    }
+
+    .main-title {
+        padding-bottom: 55px;
+    }
+
+    .question-field {
+        display: flex;
+        justify-content: space-between;
+        width: 740px;
+
+
+        .text-default {
+            padding-bottom: 27px;
+
+            &.big {
+                font-size: 20px;
+                padding-top: 15px;
+            }
+        }
+
+        .check-box {
+            width: 16px;
+            height: 6px;
+
+            &::before {
+                content: "";
+                width: 16px;
+                border-bottom: 5px solid $primary-text;
+                position: absolute;
+                transform: translate(-15px, 22px) rotate(45deg);               
+            }
+
+            &::after {
+                content: "";
+                width: 16px;
+                border-bottom: 5px solid $primary-text;
+                position: absolute;
+                transform: translate(-7px, 22px) rotate(-45deg);               
+            }
+        }
+    }
+
+    .q-line {
+        width: 750px;
+        border: 1px solid $primary-text;
+        
+    }
 }
 
 .final-page {
@@ -242,10 +324,87 @@ h1, h3, p, li {
                 width: 510px;
                 padding-bottom: 16px;
             }
+
+            .main-title {
+                width: 470px;
+            }
         }
     }
 
     .final-image {
         padding-left: 150px;
+    }
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .footer-line {
+        width: 1240px;
+        border: 1px solid $footer-line;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        padding: 35px 50px;
+        gap: 600px;
+        
+        .footer-logo-container {
+
+            .logo {
+                padding-bottom: 10px;
+                cursor: pointer;
+            }
+    
+            .text-default {
+    
+                &.small {
+                    padding-bottom: 20px;
+                }
+    
+                &.smaller {
+                    color: $page-title-color;
+                }
+            }
+        }
+    
+        .footer-info-wrapper {
+            display: flex;
+            gap: 90px;
+    
+            .footer-nav-wrapper {
+    
+                .footer-list {
+    
+                    li {
+                        list-style-type: none;
+                        cursor: pointer;
+                        padding-bottom: 9px;
+                    }
+                }
+    
+                .text-default {
+    
+                    &.small {
+                    padding-bottom: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.text-default {
+
+    &.small {
+        font-size: 15px;
+        color: $page-title-color;
+    }
+
+    &.smaller {
+        font-size: 13px;
     }
 }
