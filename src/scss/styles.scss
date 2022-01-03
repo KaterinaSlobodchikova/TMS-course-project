@@ -206,7 +206,7 @@ h1, h3, p, li {
 }
 
 .delivery-wrapper {
-    height: 75vh;
+    height: 85vh;
     background-color: $secondary-bg;
     display: flex;
     justify-content: center;
@@ -215,7 +215,7 @@ h1, h3, p, li {
     .method-example {
         display: flex;
         flex-direction: column;
-        margin-top: 380px;
+        margin-top: 440px;
         margin-right: 10px;
 
         .example-image {
@@ -317,6 +317,14 @@ h1, h3, p, li {
                 &.small {
                     margin-left: 16px;
                 }
+            }
+        }
+
+        .shipping-text {
+
+            .text-default {
+                font-size: 20px;
+                padding: 30px 0;
             }
         }
 
