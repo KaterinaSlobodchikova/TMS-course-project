@@ -118,6 +118,12 @@
 
     <section class="delivery-wrapper">
 
+        <div class="method-example">
+            <img class="example-image-first" src="../src/assets/img/text.png" alt="text">
+            <img class="example-image" src="../src/assets/img/arrow.png" alt="arrow">
+        </div>
+        
+
         <div class="delivery-container">
 
             <div class="order-line"></div>
@@ -134,7 +140,7 @@
                 <p class="text-default gray">> Payment</p>
             </div>
 
-            <div class="first-form">
+            <div class="template-form">
 
                 <div class="form-one">
                     <div class="form-info">
@@ -163,12 +169,52 @@
 
             <p class="text-default big">Shipping method</p>
 
-            
-            
+            <div class="shipping-method">
 
-            <div class="form">
+                <div class="template-form second">
+
+                    <div class="method-wrapper">
+                        <div class="method-name">
+                            <input class="radio-base" type="radio" name="shippingMethod" id="Standart">
+                            <label class="radio-input" for="shippingMethod">Standart</label>
+                        </div>
+                    
+                        <div class="method-price first">
+                            <p class="text-default bold">Free</p>
+                        </div>
+                    </div>
+
+                    <div class="order-line"></div>
+                    
+                    <div class="method-wrapper">
+                        <div class="method-name">
+                            <input class="radio-base" type="radio" name="shippingMethod" id="Expedited">
+                            <label class="radio-input" for="shippingMethod">Expedited</label>
+                        </div>
+                    
+                        <div class="method-price second">
+                            <p class="text-default bold">$8.90</p>
+                        </div>
+                    </div>
+
+                    <div class="order-line"></div>
+
+                    <div class="method-wrapper">
+                        <div class="method-name">
+                            <input class="radio-base" type="radio" name="shippingMethod" id="Same-Day">
+                            <label class="radio-input" for="shippingMethod">Same-Day Delivery with Localli</label>
+                            <p class="text-default gray">Delivered within a couple of hours</p>
+                        </div>
+                    
+                        <div class="method-price">
+                            <p class="text-default bold">$12.00</p>
+                        </div>
+                    </div>
+                
+                </div>
 
             </div>
+
 
             <button class="button-primary big">Continue to payment</button>
 

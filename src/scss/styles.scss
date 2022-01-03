@@ -206,11 +206,23 @@ h1, h3, p, li {
 }
 
 .delivery-wrapper {
-    height: 70vh;
+    height: 75vh;
     background-color: $secondary-bg;
     display: flex;
     justify-content: center;
     padding-top: 70px;
+
+    .method-example {
+        display: flex;
+        flex-direction: column;
+        margin-top: 380px;
+        margin-right: 10px;
+
+        .example-image {
+            width: 50px;
+            margin-left: 100px;
+        }
+    }
 
     .delivery-container {
         .order-summary {
@@ -248,7 +260,7 @@ h1, h3, p, li {
             }
         }
 
-        .first-form {
+        .template-form {
 
             .form-info {
                 display: flex;
@@ -265,16 +277,16 @@ h1, h3, p, li {
         }
 
         .order-line {
-            width: 400px;
+            width: 500px;
             border-bottom: 1px solid $secondary-border;
 
             &.small {
-                width: 368px;
+                width: 468px;
             }
         }
 
-        .first-form {
-            width: 403px;
+        .template-form {
+            width: 500px;
             height: 180px;
             border: 2px solid $secondary-border;
             border-radius: 3%;
@@ -291,11 +303,11 @@ h1, h3, p, li {
                     cursor: pointer;
 
                     &.first {
-                        padding: 18px 0px 0px 210px;
+                        padding: 18px 0px 0px 310px;
                     }
 
                     &.second {
-                        padding: 18px 0px 0px 25px;
+                        padding: 18px 0px 0px 125px;
                     }
                 }
             }
@@ -308,19 +320,87 @@ h1, h3, p, li {
             }
         }
 
+        .shipping-method {
+
+            .radio-input {
+                font-size: 20px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                cursor: pointer;
+            }
+
+        }
+
+        .shipping-method {
+            display: flex;
+            flex-direction: column;
+
+            .template-form {
+
+                &.second {
+                    height: 215px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .method-wrapper {
+                display: flex;
+                padding: 20px 17px;
+
+                .method-name {
+                    
+                    .text-default {
+
+                        &.gray {
+                            color: $gray-color;
+                            padding-left: 16px;
+                        }
+                    }
+                    
+                }
+
+            }
+
+            .method-price {
+                padding-left: 110px;
+
+                &.first {
+                    padding-left: 325px;
+                }
+
+                &.second {
+                    padding-left: 302px;
+                }
+
+                .text-default {
+                    
+                    &.bold {
+                        font-size: 20px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold;
+                        
+                    }
+                }
+            }
+        }
+
 
         .button-primary {
 
             &.big {
-                width: 400px;
+                width: 500px;
                 height: 71px;
                 border-radius: 5px;
+                font-size: 20px;
             }
         }
     }
 
     .delivery-description {
         padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 230px;
     }
 }
 
