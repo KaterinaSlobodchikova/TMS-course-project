@@ -212,6 +212,10 @@ h1, h3, p, li {
     justify-content: center;
     padding-top: 70px;
 
+    .delivery-form {
+        display: flex;
+    }
+
     .method-example {
         display: flex;
         flex-direction: column;
@@ -238,7 +242,7 @@ h1, h3, p, li {
 
                 &.bold {
                     font-weight: bold;
-                    padding-left: 75px;
+                    padding-left: 175px;
                 }
             }
         }
@@ -606,5 +610,237 @@ h1, h3, p, li {
 
     &.smaller {
         font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header-wrapper {
+        width: 768px;
+        display: flex;
+        align-items: center;
+        padding: 35px 50px;
+    
+        .nav-wrapper {
+            margin-left: auto;
+            margin-right: 25px;
+        }
+    }
+
+    .main-wrapper {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+        .main-container {
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .text-default {
+                margin-bottom: 16px;
+                width: 600px;
+            }
+
+            .main-buttons {
+                margin-bottom: 25px;
+            }
+
+            .main-benefits-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 600px;
+
+                .main-check {
+                    margin-right: 1px;
+                }
+
+                .main-benefits {
+                    padding-right: 40px;
+                }
+            }
+        }
+
+        .main-image {
+            width: 700px;
+            height: 345px;
+        }
+    }
+    
+    .main-title {
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 13px;
+        line-height: 50px;
+    }
+
+    .about-page-wrapper {
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+
+        .main-title {
+            width: 700px;
+            padding-left: 10px;
+        }
+
+        .about-page-image {
+            width: 700px;
+        }
+    }
+
+    .steps-of-work {
+        height: 180vh;
+        display: flex;
+
+        .main-title {
+            margin-bottom: 35px;
+        }
+
+        .steps-container {
+            width: 768px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .step-wrapper {
+                width: 500px;
+                padding-bottom: 50px;
+
+                .steps-image {
+                    width: 500px;
+                    padding: 0 0 20px 0;
+                }
+
+                .text-title {
+                    font-size: 30px;
+                }
+
+                .text-default {
+                    font-size: 20px;
+
+                    &.first {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tracking-page {
+        height: 80vh;
+        flex-direction: column;
+
+        .tracking-info-wrapper {
+            padding-bottom: 30px;            
+        }
+
+        .tracking-image {
+            padding-left: 0px;
+        }
+    }
+
+    .delivery-wrapper {
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .delivery-form {
+            display: flex;
+            justify-content: center;
+
+            .method-example {
+                width: 150px;
+            }
+    
+            .delivery-container {
+                width: 500px;
+            }
+        }
+
+        .delivery-description {
+            margin-top: 40px;
+        }
+    }
+
+    .map-wrapper {
+        height: 60vh;
+
+        .map-image {
+            width: 600px;
+        }
+    }
+
+    .questions-wrapper {
+        height: 55vh;
+
+        .page-title {
+            padding-top: 50px;
+        }
+
+        .main-title {
+            padding-bottom: 25px;
+        }
+
+        .question-field {
+            display: flex;
+            justify-content: space-between;
+            width: 600px;    
+        }
+    
+        .q-line {
+            width: 600px;
+            border: 1px solid $primary-text;
+        }
+    }
+
+    .final-page {
+        height: 75vh;
+        display: flex;
+        align-content: center;
+
+
+        .final-bg {
+            width: 650px;
+            height: 650px;
+        }
+
+        .final-container {
+            width: 768px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+
+            .final-wrapper {
+                padding-left: 130px;
+            }
+
+            .final-image {
+                width: 600px;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .footer-wrapper {
+
+        .footer-line {
+            width: 700px;
+        }
+
+        .footer-container {
+            gap: 130px;
+
+            .footer-info-wrapper {
+                gap: 20px;
+
+            }
+        }
     }
 }
