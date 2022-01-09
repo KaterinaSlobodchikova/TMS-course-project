@@ -839,7 +839,380 @@ h1, h3, p, li {
 
             .footer-info-wrapper {
                 gap: 20px;
+            }
+        }
+    }
+}
 
+@media only screen and (max-width: 320px) {
+
+    .header-wrapper {
+        width: 320px;
+
+        .nav-wrapper {
+            display: none;
+        }
+
+        .button-primary {
+            display: none;
+        }
+
+        .logo {
+            width: 50%;
+        }
+    }
+
+    .button-primary {
+        width: 83px;
+        height: 23px;
+        font-weight: 400;
+        font-size: 9px;
+    }
+    
+    .main-wrapper {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+        .main-container {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .text-default {
+                margin-bottom: 16px;
+                width: 250px;
+            }
+
+            .main-buttons {
+                margin-bottom: 25px;
+            }
+
+            .main-benefits-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 280px;
+
+                .main-check {
+                    margin-right: 1px;
+                }
+
+                .main-benefits {
+                    padding-right: 5px;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .main-image {
+            width: 250px;
+            height: 125px;
+        }
+    }
+
+    .main-title {
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 13px;
+        line-height: 25px;
+    }
+
+    .about-page-wrapper {
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+
+        .main-title {
+            width: 300px;
+            padding-left: 10px;
+        }
+
+        .about-page-image {
+            width: 300px;
+        }
+    }
+
+    .steps-of-work {
+        height: 105vh;
+
+        .steps-container {
+            width: 320px;
+
+            .step-wrapper {
+                width: 280px;
+                padding-bottom: 50px;
+
+                .steps-image {
+                    width: 200px;
+                    padding: 0 0 20px 0;
+
+                    &.second {
+                        width: 200px;
+                        padding-left: 10px;
+                    }
+
+                    &.third {
+                        padding-left: 10px;
+                    }
+                }
+
+                .text-title {
+                    font-size: 15px;
+                }
+
+                .text-default {
+                    font-size: 10px;
+
+                    &.first {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tracking-page {
+        width: 320px;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+
+        .tracking-info-wrapper {
+            width: 280px;
+            padding-bottom: 30px;
+            display: flex;
+            
+            .text-default {
+                width: 280px;
+            }
+        }
+
+        .tracking-image {
+            width: 280px;
+            padding-left: 0px;
+        }
+    }
+
+    .delivery-wrapper {
+        height: 110vh;
+
+        .delivery-form {
+            
+            .method-example {
+                display: none;
+            }
+
+            .delivery-container {
+                width: 300px;
+
+                .order-summary {
+
+                    .order-image {
+                        height: 30px;
+                    }
+
+                    .text-default {
+
+                        &.big {
+                            font-size: 10px;
+                        }
+
+                        &.bold {
+                            padding-left: 75px;
+                        }
+                    }
+                }
+
+                .order-line {
+                    width: 300px;
+                    border-bottom: 1px solid $secondary-border;
+        
+                    &.small {
+                        width: 288px;
+                    }
+                }
+
+                .template-form {
+                    width: 300px;
+
+                    .form-one {
+
+                        .change-info {
+
+                            &.first {
+                                padding-left: 100px;
+                            }
+
+                            &.second {
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .shipping-text {
+
+                    .text-default {
+                        font-size: 10px;
+                        padding: 30px 0;
+                    }
+                }
+
+                .shipping-method {
+
+                    .radio-input {
+                        font-size: 10px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }
+
+                    .method-wrapper {
+
+                        .method-name {
+
+                            .text-default {
+
+                                &.gray {
+                                    width: 170px;
+                                    font-size: 10px;
+                                }    
+                                
+                                
+                            }
+                        }
+
+                        .method-price {
+                            padding-left: 30px;
+
+                            &.first {
+                                padding-left: 160px;
+                            }
+
+                            &.second {
+                                padding-left: 150px;
+                            }
+                        }
+                    }
+                }
+
+                .button-primary {
+
+                    &.big {
+                        width: 280px;
+                        height: 40px;
+                        border-radius: 5px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .map-wrapper {
+        height: 35vh;
+
+        .map-image {
+            width: 280px;
+        }
+    }
+
+    .questions-wrapper {
+        height: 30vh;
+
+        .page-title {
+            padding-top: 50px;
+        }
+
+        .main-title {
+            padding-bottom: 10px;
+        }
+
+        .question-field {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            
+            .text-default {
+
+                &.big {
+                    font-size: 8px;
+                    padding-top: 3px;
+                    padding-bottom: 5px;
+                }
+            }
+
+            .check-box {
+                width: 8px;
+                height: 4px;
+    
+                &::before {
+                    content: "";
+                    width: 8px;
+                    border-bottom: 2px solid $primary-text;
+                    position: absolute;
+                    transform: translate(-10px, 22px) rotate(45deg);               
+                }
+    
+                &::after {
+                    content: "";
+                    width: 8px;
+                    border-bottom: 2px solid $primary-text;
+                    position: absolute;
+                    transform: translate(-7px, 22px) rotate(-45deg);               
+                }
+            }
+        }
+    
+        .q-line {
+            width: 200px;
+            border: 1px solid $primary-text;
+        }
+    }
+
+    .final-page {
+        height: 55vh;
+        margin-top: 20px;
+
+        .final-bg {
+            width: 250px;
+            height: 470px;
+        }
+
+        .final-container {
+            width: 250px;
+
+            .final-wrapper {
+                width: 250px;
+                padding-left: 15px;
+
+                .text-default {
+                    width: 200px;
+                }
+            }
+
+            .final-image {
+                width: 240px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .footer-wrapper {
+
+        .footer-line {
+            width: 300px;
+        }
+
+        .footer-container {
+            gap: 30px;
+
+            .footer-info-wrapper {
+                display: none;
             }
         }
     }
